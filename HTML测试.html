@@ -1,0 +1,180 @@
+<html>
+	
+	<head>
+       <title>HTML测试文档</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="loading.css">
+	</head>
+
+	<style>
+		#right{
+			float:right;
+			color: blue;
+			}
+		#center{
+			font-family: 宋体;
+			font-size: 24px;
+			color: red;
+		}
+	</style>
+
+	<body>
+		<div class="circle"></div><!--开发同心圆弧旋转loading特效-->
+		购物去吧！<p>
+		超链接标记a
+		<div id="center">
+		<h2><a href="http://www.taobao.com">淘宝</a></h2>
+		<h2><a href="http://www.jd.com">京东</a></h2>
+        </div>
+        <p>
+        	<h2>图像标记
+        	语法格式：</h2>
+        	<img src="images/p16.jpg" width="value" height="value" border="value" alt="提示文字">
+
+        </p>
+
+	    <h3>1,段落标题p,段前段后各添加空行<h3>
+			<p>段落标题p,段前段后各添加空行</p>
+
+		<h3>2,标题标记 分六级</h3>
+			<h1>一级标题</h1>
+        	<h2>二级标题</h2>
+			<h3>三级标题</h3>
+			<h4>四级标题</h4>
+			<h5>五级标题</h5>
+			<h6>六级标题</h6>
+
+		<h3>3,居中处理center</h3>
+			<center><h3>好好学习,天天向上</h3></center>
+
+		<h3>4,无序列表标记</h3>
+		<p>
+			<ul>
+				<li>通过符号ul创建</li>
+				<li>前面有个点</li>
+				<li>没有顺序排</li>
+	        </ul>
+
+		<h3>5,有序列表</h3>
+		<p>  
+		   <ol>
+		   		<li>通过符号ol创建</li>
+		   		<li>前面有序号</li>
+		   		<li>以上包括标题标记</li>
+		   </ol>
+
+		<h3>6,区域标记</h3>
+		    <h5>span标签用来组合行内元素</h5>
+			<h5>div是元素块;这两种放在style中,一般位于head后面</h5>
+			<a><span id="right">span的效果</span></a>
+			<div id="center">
+				<a>div的效果第一行</a>
+				<br/><a>div效果第二行</a>
+			</div>
+		<h3>7,表格标记table,width宽度,border边框,align对齐方式,bgcolor表格背景色</h3>
+		<h4>标题标记以caption开头,表头标记th,表格行标记tr,单元格标记/列表记td</h4>
+			<table width="318" height="167" border="1" align="center">
+				<h2><caption>图片插入</caption></h2>	
+				<tr>
+					<td width="199" height="208">
+						<img src="images/p12.jpg"/>			
+					</td>
+
+					<td width="199" height="208">
+						<img src="images/p13.jpg"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td height="35" align="center" valign="middle"><a href="lx.html">查看详情</a></td>
+					<td align="center" valign="middle"><a href="uncode.html">查看详情</a></td>
+				</tr>
+
+
+				<tr>
+					<td height="227"><img src="images/p15.jpg"/></td>
+					<td ><img src="images/p16.jpg"/></td>
+				</tr>
+				
+				<tr>
+					<td height="35" align="center" valign="middle"><a href="lx.html">查看详情</a></td>
+					<td align="center" valign="middle"><a href="uncode.html">查看详情</a></td>
+				</tr>
+				<p>
+			</table>
+			<table width="318" height="167" border="1" align="center" bgcolor="red">
+
+				<h2><caption>表格制作</caption></h2>
+				<tr>
+					<td align="center" valign="middle">tr内的第一行第一个元素</td>
+					<td align="center" valign="middle">tr内的第一行第二个元素</td>
+					<td align="center" valign="middle">tr内的第一行第三个元素</td>
+				</tr>
+				<tr>
+					<td align="center" valign="middle">tr内的第二行第一个元素</td>
+					<td align="center" valign="middle">tr内的第二行第二个元素</td>
+					<td align="center" valign="middle">tr内的第二行第三个元素</td>
+				</tr>
+			</table>
+
+
+		<p><p><p><p><p><p><p><h3>8，html表单标记,登陆时的用户名文本框与密码文本框就属于表单元素 action=后面跳转html文件</h3>
+			<h5>form表单标记属性略，input表单输入标记</h5>】
+			<form action="" methon="post" name="myform">
+				<p>用户名：<input type="text" name="username" id="UserName4" maxlength="20">
+				<p>密码：<input type="password" name="pwdl" id="PPWD14" size="20" maxlength="20">
+				<p>性别：<input type="radio" name="sex" class="noborder" value="男"checked>
+						男&nbsp;
+						<input type="radio" name="sex" class="noborder" value="女">
+						女
+				<p>爱好：<input type="checkbox" name="like" id="like" value="体育">
+				     体育
+					 <input type="checkbox" name="like" id="like" value="旅游">
+					 旅游
+					 <input type="checkbox" name="like" id="like" value="听音乐">
+					 听音乐
+					 <input type="checkbox" name="like" id="like" value="看书">
+					 看书
+				<p>E-mail：<input type="text" name="email" id="PW44D" size="50">
+				<input type="submit" name="Submit" class="btn_grey" value_="确定保存">
+				<input type="reset" name="Reset" class="btn_grey" value_="重新填写">
+				<input type="image" name="imageField" src="image/btn_bg.jpg ">
+			</form>
+
+		<p>
+		<h3>9,下拉菜单标记select</h3>
+		下拉列表框 ：
+			<p><select name="select">
+				<option>手机</option>
+				<option>电脑</option>
+				<option>MP3</option>
+				<option>火车</option>
+				<option>你大爷</option>
+			</select>
+			<p>&nbsp;多行列表框（不可多选）：
+			<select name="select" size="2" >
+				<option>手机</option>
+				<option>电脑</option>
+				<option>MP3</option>
+				<option>火车</option>
+				<option>你大爷</option>
+				</select>
+			<p>&nbsp;多行列表框（可多选）：
+			<select name="select" size="3" multiple >
+				<option>手机</option>
+				<option>电脑</option>
+				<option>MP3</option>
+				<option>火车</option>
+				<option>你大爷</option>
+				</select>
+
+			<p>多行文本标记textarea
+				<form name="form1" method="post" action="lx.html">
+						<textarea name="content" cols="30" rows="5" wrap="hard"></textarea>
+				</form>
+				<button>复制</button>
+                <button>删除</button>
+
+
+	</body>
+</html>
